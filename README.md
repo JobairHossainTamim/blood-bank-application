@@ -6,7 +6,7 @@
 
 # Technology:
 
-- nodemon express jsonwebtoken bcryptjs mongoose body-parser cors
+- nodemon express jsonwebtoken bcryptjs mongoose body-parser cors 
 
 
 

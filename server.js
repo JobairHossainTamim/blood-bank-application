@@ -9,7 +9,10 @@ const bodyParser = require('body-parser');
 
 // path Identifier
 const dbConfig = require('./src/config/dbConfig')
-const userRouter = require("./src/modules/User/user.router")
+
+const userRouter = require("./src/modules/User/user.router");
+const inventoryRouter = require("./src/modules/Inventory/inventory.router");
+
 
 // App Required 
 app.use(express.json());
@@ -22,6 +25,7 @@ app.use(bodyParser.raw({ type: 'application/json' }));
 
 // Api 
 app.use('/api/user', userRouter)
+app.use('/api/inventory', inventoryRouter)
 
 
 const PORT = process.env.PORT || 5000;
